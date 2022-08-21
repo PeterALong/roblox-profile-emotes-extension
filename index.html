@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="jquery.js"></script>
+  <style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+    h5 {
+      display: inline;
+    }
+  </style>
+</head>
+
+<body>
+  <h5>Emote Asset ID:</h5>
+  <br>
+  <input type="number" id="emoteAssetId" value=0>
+  <br>
+  <h5>Camera Distance:</h5>
+  <br>
+  <input type="range" min="5" max="40" value="20" id="distanceScale">
+  <h5 id="distanceLabel">2</h5>
+  <br>
+  <h5>Camera FOV:</h5>
+  <br>
+  <input type="range" min="15" max="45" value="30" id="fieldOfViewDeg">
+  <h5 id="fieldOfViewLabel">30</h5>
+  <br>
+  <h5>Camera X rotation:</h5>
+  <br>
+  <input type="range" min="-20" max="20" value="0" id="xRotDeg">
+  <h5 id="xRotLabel">0</h5>
+  <br>
+  <h5>Camera Y rotation:</h5>
+  <br>
+  <input type="range" min="-20" max="20" value="0" id="yRotDeg">
+  <h5 id="yRotLabel">0</h5>
+  <br>
+  <input type="radio" id="headshot" name="shot" value=1 checked>
+  <label for="headshot">Headshot</label><br>
+  <input type="radio" id="bodyshot" name="shot" value=2>
+  <label for="bodyshot">Bodyshot</label><br>
+  <br>
+  <input type="submit" id="go">
+  <br>
+  <h5 id="goProgress"></h5>
+  <script src="index.js"></script>
+</body>
+
+</html>
