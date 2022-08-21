@@ -1,5 +1,5 @@
 # ROBLOX AVATAR EMOTES
-Allows you to use any owned emote in your profile picture.
+A Chrome extension that allows you to use any owned emote in your profile picture.
 
 **Example:**
 
